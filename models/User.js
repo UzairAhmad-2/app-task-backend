@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
+  firebaseId: {
+    type: String,
+    required: "Firebase ID is required",
+  },
   name: {
     type: String,
     required: "Name is required",
